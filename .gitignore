@@ -1,12 +1,36 @@
+# dependencies
 node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# next.js
 .next/
 out/
-.vercel/
+build/
+next-env.d.ts
+*.tsbuildinfo
+
+# testing
+coverage/
+playwright-report/
+test-results/
+
+# env files (only .env.example is committed)
 .env
 .env.*
 !.env.example
-.DS_Store
-*.log
-coverage/
+
+# vercel / supabase
+.vercel
 .supabase/
 supabase/.temp/
+
+# misc
+.DS_Store
+*.pem
+*.log
